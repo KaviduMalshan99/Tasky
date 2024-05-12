@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">note App</string>
+    <string-array name="priority_levels">
+        <item>Urgent</item>
+        <item>Medium</item>
+        <item>Not Important</item>
+    </string-array>
+
+</resources>

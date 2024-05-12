@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue"
+    android:padding="16dp"
+    tools:context=".UpdateNoteActivity">
+
+    <TextView
+        android:id="@+id/editNoteHeding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="Edit Note.."
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textColor="@color/yellow"
+        android:textSize="30dp"/>
+
+    <ImageView
+        android:id="@+id/updatesaveButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/corect"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/editNoteHeding"
+        android:layout_marginEnd="6dp"/>
+
+    <EditText
+        android:id="@+id/updatetitleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter The Title"
+        android:padding="12dp"
+        android:textSize="20dp"
+        android:layout_below="@id/editNoteHeding"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"/>
+
+    <EditText
+        android:id="@+id/updatedateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/updatetitleEditText"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/orange_border"
+        android:hint="Select Date"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:textSize="20dp"
+        android:focusable="false"
+        android:clickable="true"
+        android:drawableRight="@drawable/calendar" />
+
+    <Spinner
+        android:id="@+id/editprioritySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/updatedateEditText"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="14dp"/>
+
+    <EditText
+        android:id="@+id/updatecontentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Enter the Description"
+        android:gravity="top"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:background="@drawable/orange_border"
+        android:layout_below="@+id/updatedateEditText"
+        android:layout_marginTop="72dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#18b0fb"
+        tools:context=".SplashActivity"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <!-- Logo or Image -->
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/imageView"
+            android:layout_marginLeft="300px"
+            android:layout_marginTop="72dp"
+            android:backgroundTint="#986cff"
+            android:fontFamily="cursive"
+            android:text="Start..."
+            android:textFontWeight="800"
+            android:textSize="30dp"
+            android:textStyle="bold" />  <!-- Added bold text style here -->
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="420dp"
+            android:layout_height="500dp"
+            app:srcCompat="@drawable/pnglogo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="433dp"
+            android:layout_marginEnd="134dp"
+            android:layout_marginBottom="223dp"
+            android:fontFamily="cursive"
+            android:text="Tasky"
+            android:textColor="#febe05"
+            android:textSize="60dp"
+            android:textStyle="bold" />
+
+        <!-- Add any additional UI elements or animations here -->
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
